@@ -1,0 +1,99 @@
+@charset 'UTF-8';
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    -webkit-user-select: none;
+    user-select: none;
+    font-size: 20px;
+}
+
+body {
+    font-size: 0.8rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+}
+
+.keyboardlist {
+    position: relative;
+    width: calc(52 * 60px);
+    height: 100%;
+    background-color: #fff;
+}
+
+.keyboard {
+    float: left;
+    position: relative;
+    width: 60px;
+    height: 100%;
+    border: 1px solid black;
+    background-color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.keyboard.half {
+    position: relative;
+    top: 0;
+    left: 30px;
+    width: calc(0.8 * 60px);
+    margin-left: calc(-0.8 * 60px);
+    height: 60%;
+    background-color: black;
+    border-width: 2px;
+    color: #fff;
+    z-index: 8;
+}
+
+.keyboard:active,
+.keyboard.active {
+    background-color: #9c3;
+}
+
+.keyboard>.name {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+}
+.controlbox{
+    position: fixed;
+    top:0;
+    padding: 10px 15px;
+    z-index: 9;
+    font-size: 1rem;
+    background-color: rgba(0,0,0,0.85);
+}
+.box-select{
+    font-size: 1rem;
+    border:none;
+}
+.box-btn{
+    font-size: 1rem;
+    border:none;
+}
+.box-tip{
+    color:orange;
+}
+.baseC4 {
+    background-color: orange;
+}
